@@ -1,4 +1,7 @@
 # JS地下城 1F 九九乘法表
+
+![Image](https://miro.medium.com/max/527/1*UKh02viS_-Roi-yL-ARpzw.png)
+
 ## 練習目標:
 **Javascript:**
 1. JS的命名與CSS分開
@@ -9,9 +12,6 @@
 4.不使用 ID，一律使用
 5. Smacss — 模組化核心語法
 6. 一率採用小駝峰式命名
-
-
-![Image](https://miro.medium.com/max/527/1*UKh02viS_-Roi-yL-ARpzw.png)
 
 一陣子沒練習感覺就會忘記，一開始的排版居然就讓我想了一陣子…
 四個角的x一開始我用flex，但距離總是抓不對，
