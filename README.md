@@ -11,6 +11,7 @@
 
 
 ![Image](https://miro.medium.com/max/527/1*UKh02viS_-Roi-yL-ARpzw.png)
+
 一陣子沒練習感覺就會忘記，一開始的排版居然就讓我想了一陣子…
 四個角的x一開始我用flex，但距離總是抓不對，
 翻了之前的HTML/CSS的筆記才想起還有before/after的屬性了。
