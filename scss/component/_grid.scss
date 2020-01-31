@@ -1,0 +1,67 @@
+//使gutter可以設置絕對數值
+* {
+  box-sizing: border-box;
+}
+
+//變數設置
+$gutter-width: 30px;
+$grid-num: 12;
+
+//mixin設置
+@mixin destop {
+  @media (min-width: 767px) {
+    @content;
+  }
+}
+
+//通用
+//[class*="col-"]告訴css找到所有class中有col開頭的div
+.no-gutters {
+  margin-left: 0;
+  margin-right: 0;
+  > .col,
+  > [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  &-col {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.container {
+  padding-left: 85px;
+  padding-right: 85px;
+}
+
+.row {
+  display: flex;
+  margin-left: -($gutter-width/2);
+  margin-right: -($gutter-width/2);
+  flex-wrap: wrap;
+}
+
+%col {
+  position: relative;
+  max-width: 100%;
+  flex: 0 0 100%;
+  padding-left: $gutter-width/2;
+  padding-right: $gutter-width/2;
+}
+//將1到$grid-num的數字帶入i
+//使用extend將css程式減少
+//mixin帶入內容
+@for $i from 1 through $grid-num {
+  .col-#{$i} {
+    @extend %col;
+    @include destop {
+      max-width: 100% * ($i/$grid-num);
+      flex: 0 0 (100% * ($i/$grid-num));
+    }
+  }
+}

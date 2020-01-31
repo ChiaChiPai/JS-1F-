@@ -1,0 +1,74 @@
+//flex設置
+.d-flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-content {
+  &-start {
+    justify-content: flex-start;
+  }
+  &-center {
+    justify-content: center;
+  }
+  &-end {
+    justify-content: flex-end;
+  }
+  &-around {
+    justify-content: space-around;
+  }
+  &-between {
+    justify-content: space-between;
+  }
+}
+
+.align-items {
+  &-start {
+    align-items: flex-start;
+  }
+  &-center {
+    align-items: center;
+  }
+  &-end {
+    align-items: flex-end;
+  }
+}
+
+.align-content {
+  &-between {
+    align-content: space-between;
+  }
+  &-stretch {
+    align-content: stretch;
+  }
+  &-around {
+    align-content: space-around
+  }
+  &-start {
+    align-content: flex-start;
+  }
+  &-end {
+    align-content: flex-end;
+  }
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+//each配置
+@each $name,$color in $type{
+    .text-#{$name}{
+        color: $color;
+    }
+    .bg-#{$name}{
+        background-color: $color;
+    }
+}

@@ -1,0 +1,25 @@
+//全局配置
+
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('../font/helveticaneue-webfont.woff2') format('woff2'),
+       url('../font/HelveticaNeue.eot') format('opentype'),
+       url('../font/HelveticaNeue.ttf') format('truetype'),
+       url('../font/helveticaneue-webfont.woff') format('woff');
+  font-weight: bolder;
+}
+
+html{
+    color: #2EB738;
+    font-family: HelveticaNeue;
+    background-color:map-get($type, grey-light);
+    font-size: 1.5rem;
+}
+
+h1,h2,p {
+  margin: 0;
+}
+
+
+
+

@@ -1,0 +1,95 @@
+.mb-4 {
+  margin-bottom: 40px;
+}
+
+.content{
+  min-height: calc(100vh - 34px);//設定最小高度讓footer可以在高度不足的情況也可以置底
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+
+.title-CH {
+  font-weight: bold;
+  padding-top: 113.5px;
+  font-size: 56px;
+  font-family: 微軟正黑體;
+}
+
+.title-ENG {
+  font-weight: bold;
+  padding-bottom: 118.5px;
+  font-size: 24px;
+  letter-spacing: 1.5px;
+}
+
+.title-upperLine{
+  background: map-get($type, primary);
+  width: 280px;
+  height: 1px;
+  position: relative;
+  &:before {
+    content: "x";
+    position: absolute;
+    font-size: 24px;
+    top:-14px;
+    left: -24px;
+  }
+  &:after {
+    content: "x";
+    position: absolute;
+    font-size: 24px;
+    top:-14px;
+    right: -24px;
+  }
+}
+
+.title-underLine{
+  background-color: map-get($type, primary);
+  width: 280px;
+  height: 1px;
+  position: relative;
+  &:before {
+    content: "x";
+    position: absolute;
+    font-size: 24px;
+    bottom: -12px;
+    left: -24px;
+  }
+  &:after {
+    content: "x";
+    position: absolute;
+    font-size: 24px;
+    bottom: -12px;
+    right: -24px;
+  }
+}
+
+.l-block {
+  box-shadow: 0px 3px 10px map-get($type, grey-dark );
+  border-radius: 100px 0px 30px 0px;
+  height: 366px;
+  padding: 64px 40px 56px 40px;
+  margin-bottom: 40px;
+  .num-item{
+    width: 105px;
+    margin-bottom: 8px;
+    line-height: 33px;
+    font-weight: bolder;
+  }
+}
+
+.num-title{
+  font-size: 128px;
+  font-weight: bolder;
+  line-height: 123px;
+  text-align: center;
+  text-shadow: 4px 3px 0px map-get($type ,grey-light);
+}
+
+.footer-text{
+  padding: 8px 0;
+  color: map-get($type, grey-light);
+  font-size: 16px;
+  text-align: right;
+  margin-right: 85px;
+}
