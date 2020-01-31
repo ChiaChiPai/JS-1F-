@@ -111,6 +111,7 @@ white: #ffffff,
 ## 插入外部字體
 這好像有點基本，但是我之前都沒使用過…(慚愧)
 因為我使用的是Sass編輯我的CSS，因為資料夾位置不同，Sass有兩層資料夾，CSS只有一層，但是我在Sass編譯時，emmet也會很"貼心"的讓你../../從Sass資料夾回兩層去找font所在的資料夾，而編譯出的CSS也會../../找兩層的資料夾，但實際HTML讀取到的是CSS那個檔案阿，只有../一層。這邊要特別注意。
+
 ![Image](https://miro.medium.com/max/2648/1*Qc94zEdYUSUYESpQXdRXrQ.png)
 ```css
 @font-face {
@@ -133,11 +134,15 @@ font-weight: normal;
 [資料參考網站](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/webfont-optimization?hl=zh-tw)
 
 ## 九九乘法表排版
+
 ![Image](https://miro.medium.com/max/530/1*Us-K4TN7OqjkaOeSR2T5zA.png)
+
 首先看上層，最大的2的高度和三個乘法算式是等高，因此去抓出右邊三個算式的文字高度33px加上margin的高度8px，總共是123px。
 這裡的重點是將最大的2的line-height設定為123px，讓他和三個算式等高，這樣排版起來就可以整齊了。
 ## 使footer置底
+
 ![Image](https://miro.medium.com/max/2870/1*OuIng8CzPtaDsZn3nBo22w.png)
+
 透過將footer補滿上一層的高度，讓footer置底。
 ```css
 .content{
