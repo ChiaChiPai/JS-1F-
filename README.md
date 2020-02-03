@@ -3,7 +3,7 @@
 ![Image](https://miro.medium.com/max/527/1*UKh02viS_-Roi-yL-ARpzw.png)
 
 ## 練習目標:
-**Javascript:**
+**JavaScript:**
 1. JS的命名與CSS分開
 
 **Sass:**
